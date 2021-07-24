@@ -9,7 +9,7 @@ const AddUser = () => {
     username: "",
     email: "",  
     phone: "",
-   
+  
   });
 
   const { name, username, email, phone } = user;
@@ -19,8 +19,8 @@ const AddUser = () => {
 
   const onSubmit = async e => {
     e.preventDefault();
-    await axios.post("http://localhost:3002/users", user);
-    history.push('/');
+    await axios.post("http://localhost:3003/users", user);
+    history.push("/");
   };
   return (
     <div className="container">
